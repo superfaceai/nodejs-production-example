@@ -2,3 +2,5 @@
 DS_STORE
 node_modules/*
 *.txt
+fly.toml
+Dockerfile
