@@ -113,10 +113,10 @@ Make a small modification to the `fly.toml` file created at the root of the app 
 ```toml
 [build]
   [build.args]
-    NODE_VERSION = "19"
+    NODE_VERSION = "20"
 
 [processes]
-  web = "node --experimental-wasi-unstable-preview1 server.mjs"
+  web = "node server.mjs"
 
 [http_service]
   internal_port = 3000
@@ -127,7 +127,7 @@ Make a small modification to the `fly.toml` file created at the root of the app 
   processes = ["web"]
 ```
 
-This ensures that the right version of Node.js will be used, and that the server will be run using the `--experiment-wasi-unstable-preview1` flag.
+This ensures that the right version of Node.js will be used. Note, that if you use Node.js < 20.0.0 the server will need to be run using the `--experiment-wasi-unstable-preview1` flag.
 
 Then, add the content from your `.env` file to the ENV on the server:
 
