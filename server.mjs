@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import { OneClient, PerformError, UnexpectedError } from '@superfaceai/one-sdk/node/index.js';
+import { OneClient, PerformError, UnexpectedError } from '@superfaceai/one-sdk';
 import { config } from 'dotenv';
 
 config();

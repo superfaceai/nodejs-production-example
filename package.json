@@ -11,7 +11,7 @@
   "author": "Martyn Davies <m@superface.ai>",
   "license": "MIT",
   "dependencies": {
-    "@superfaceai/one-sdk": "^3.0.0-beta.2",
+    "@superfaceai/one-sdk": "^3.0.0-beta.11",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
